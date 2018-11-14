@@ -25,7 +25,11 @@ namespace POC
 		public MainWindow()
 		{
 			InitializeComponent();
+		
 			MyMapControl.Map.Layers.Add(new TileLayer(KnownTileSources.Create()));
+			TileLayer tl = new TileLayer();
+			
+			//MyMapControl.Map.Layers.Add()
 		}
 	}
 }
